@@ -1,0 +1,21 @@
+.hero {
+  //   @extend %section;
+}
+
+.hero__container {
+  @extend %container;
+}
+
+.hero__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__title {
+  @extend %section-title;
+  margin-bottom: 16px;
+  & span {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

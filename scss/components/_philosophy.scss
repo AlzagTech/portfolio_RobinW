@@ -1,0 +1,39 @@
+.philosophy {
+  background-color: getColor('peach-accent');
+}
+
+.philosophy__container {
+  @extend %container;
+}
+
+.philosophy__title {
+  @extend %section-title;
+  color: getColor('base');
+  margin-bottom: 24px;
+}
+
+.philosophy__text {
+  color: getColor('dark-grey');
+  margin-bottom: 90px;
+}
+
+.philosophy__link {
+  @extend %link;
+  position: relative;
+  font-size: 16px;
+  color: getColor('level-1');
+
+  &::after {
+    content: '';
+    position: absolute;
+    border: 1px solid getColor('light-grey');
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.philosophy__img {
+  margin-left: auto;
+  margin-right: auto;
+}

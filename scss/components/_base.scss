@@ -1,0 +1,29 @@
+body {
+  background-color: getColor('base');
+  color: getColor('text');
+  font-family: $font;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,54 @@
+.experience__container {
+  @extend %container;
+}
+
+.experience__list {
+  @extend %list;
+
+  & .experience__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.experience__subject {
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: getColor('light-grey');
+}
+
+.experience__title {
+  @extend %section-title;
+  margin-bottom: 40px;
+}
+
+.experience__component {
+  font-size: 117px;
+  line-height: 1.2;
+  color: getColor('light-grey');
+}
+
+.experience__subtitle {
+  @extend %section-subtitle;
+  margin-bottom: 16px;
+
+  &--first {
+    color: getColor('green-accent');
+  }
+
+  &--second {
+    color: getColor('blue-accent');
+  }
+
+  &--third {
+    color: getColor('pink-accent');
+  }
+}
+
+.experience__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: getColor('light-grey');
+}

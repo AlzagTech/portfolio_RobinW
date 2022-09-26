@@ -1,0 +1,79 @@
+%container {
+  padding: 0px 20px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+
+  @media screen and (min-width: 360px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding: 0 72px;
+  }
+}
+
+%section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 360px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+%list {
+  list-style: none;
+  padding-left: 0;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%input {
+  margin: 0;
+  padding: 0;
+}
+
+%visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+%section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.19;
+}
+
+%section-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+}

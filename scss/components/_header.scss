@@ -1,0 +1,19 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.header__logo {
+  fill: getColor('text');
+}
+
+.header__nav {
+  @extend %visually-hidden;
+}

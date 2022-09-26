@@ -1,0 +1,24 @@
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$font: Sen, sans-serif;
+
+$colors: (
+  'base': #000000,
+  'level-1': #181823,
+  'text': #ffffff,
+  'primary': #5221e6,
+
+  // 'light-grey': #deecf9,
+  'light-grey': #8491a0,
+  // 'dark-grey': #c7e0f4,
+  'dark-grey': #5b6876,
+
+  'green-accent': #3cc74e,
+  'pink-accent': #e95d90,
+  'peach-accent': #fff3e4,
+  'violet-accent': #fbe4ff,
+  'blue-accent': #609bff,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
