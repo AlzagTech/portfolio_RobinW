@@ -1,0 +1,38 @@
+.skillset__container {
+  @extend %container;
+}
+
+.skillset__title {
+  @extend %section-title;
+  margin-bottom: 16px;
+}
+
+.skillset__text {
+  color: getColor('light-grey');
+  margin-bottom: 48px;
+}
+
+.skillset__list {
+  @extend %list;
+}
+
+.skillset__item {
+  & + & {
+    margin-top: 48px;
+  }
+}
+
+.skillset__icon {
+  fill: getColor('primary');
+  margin-bottom: 24px;
+}
+
+.skillset__subtitle {
+  @extend %section-subtitle;
+  margin-bottom: 12px;
+}
+
+.skillset__desc {
+  font-size: 16px;
+  color: getColor('light-grey');
+}

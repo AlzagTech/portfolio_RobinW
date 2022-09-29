@@ -1,0 +1,42 @@
+.projects__container {
+  @extend %container;
+}
+
+.projects__subject {
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  color: getColor('light-grey');
+}
+
+.projects__title {
+  @extend %section-title;
+  margin-bottom: 80px;
+}
+
+.projects__list {
+  @extend %list;
+}
+
+.projects__item {
+  & + & {
+    margin-top: 48px;
+  }
+}
+
+.projects__label {
+  background-color: getColor('level-1');
+  padding: 40px 32px;
+}
+
+.projects__subtitle {
+  @extend %section-subtitle;
+  margin-bottom: 13px;
+}
+
+.projects__text {
+  color: getColor('light-grey');
+}

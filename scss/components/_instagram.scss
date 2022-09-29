@@ -1,0 +1,28 @@
+.instagram {
+  background-color: getColor('violet-accent');
+}
+
+.instagram__container {
+  @extend %container;
+}
+
+.instagram__title {
+  @extend %section-title;
+  color: getColor('level-1');
+  margin-bottom: 16px;
+}
+
+.instagram__text {
+  color: getColor('dark-grey');
+  margin-bottom: 126px;
+}
+
+.instagram__link {
+  @extend %link;
+  @extend %special-link;
+}
+
+.instagram__img {
+  margin-left: auto;
+  margin-right: auto;
+}
