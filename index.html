@@ -22,6 +22,17 @@
         <svg width="78" height="24">
           <use class="header__logo" href="./images/icons.svg#icon-logo"></use>
         </svg>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="24">
+            <use class="header__icon" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item"><a href="#experience" class="header__link">Experience</a></li>
@@ -324,105 +335,239 @@
       </div>
     </section>
     <!-- Testimonials section -->
-    <section>
-      <h2>This is what people say about me</h2>
-      <p>
-        Here are a few lines from people who I have worked with over the past 8+ years in my design
-        career.
-      </p>
-      <a href="">See all testimonials</a>
-      <ul>
-        <li>
-          <img src="" alt="" />
-          <p>
-            ‘’Robin is one of the best designers I have worked with in my entire life. He is a
-            designer who is very capable of taking up complex projects and delivers impeccable
-            design.’’
-          </p>
-          <h4>Richard Owens</h4>
-          <p>CEO, Company 1</p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p>
-            ‘’I think Robin has an incredible gift. It has been an absolute pleasure to work with a
-            designer of this caliber.’’
-          </p>
-          <h4>Emily Parker</h4>
-          <p>CEO, Company 2</p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <p>
-            ‘’All I can say that, Robin is a phenomenal designer. The wavelength at which he thinks
-            is astoundaing. I love the focus, passion and attention to detial in the design.’’
-          </p>
-          <h4>Vincent Rudd</h4>
-          <p>CEO, Company 3</p>
-        </li>
-      </ul>
+    <section class="testimonials">
+      <div class="testimonials__container">
+        <h2 class="testimonials__title">This is what people say about me</h2>
+        <p class="testimonials__desc">
+          Here are a few lines from people who I have worked with over the past 8+ years in my
+          design career.
+        </p>
+        <a class="testimonials__link" href="">See all testimonials</a>
+        <ul class="testimonials__list">
+          <li class="testimonials__item">
+            <img
+              class="testimonials__img"
+              srcset="
+                ./images/mobile/testimonial1-m-1x.jpg 1x,
+                ./images/mobile/testimonial1-m-2x.jpg 2x
+              "
+              src="./images/mobile/testimonial1-m-1x.jpg"
+              alt="Laptop and mobile"
+            />
+            <div class="testimonials__label">
+              <p class="testimonials__text">
+                ‘’Robin is one of the best designers I have worked with in my entire life. He is a
+                designer who is very capable of taking up complex projects and delivers impeccable
+                design.’’
+              </p>
+              <h3 class="testimonials__name">Richard Owens</h3>
+              <p class="testimonials__job-title">CEO, Company 1</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <img
+              class="testimonials__img"
+              srcset="
+                ./images/mobile/testimonial2-m-1x.jpg 1x,
+                ./images/mobile/testimonial2-m-2x.jpg 2x
+              "
+              src="./images/mobile/testimonial2-m-1x.jpg"
+              alt="Meeting in the office"
+            />
+            <div class="testimonials__label">
+              <p class="testimonials__text">
+                ‘’I think Robin has an incredible gift. It has been an absolute pleasure to work
+                with a designer of this caliber.’’
+              </p>
+              <h3 class="testimonials__name">Emily Parker</h3>
+              <p class="testimonials__job-title">CEO, Company 2</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <img
+              class="testimonials__img"
+              srcset="
+                ./images/mobile/testimonial3-m-1x.jpg 1x,
+                ./images/mobile/testimonial3-m-2x.jpg 2x
+              "
+              src="./images/mobile/testimonial3-m-1x.jpg"
+              alt="Office"
+            />
+            <div class="testimonials__label">
+              <p class="testimonials__text">
+                ‘’All I can say that, Robin is a phenomenal designer. The wavelength at which he
+                thinks is astoundaing. I love the focus, passion and attention to detial in the
+                design.’’
+              </p>
+              <h3 class="testimonials__name">Vincent Rudd</h3>
+              <p class="testimonials__job-title">CEO, Company 3</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Photography section -->
-    <section id="photography">
-      <h2>Photography</h2>
-      <p>
-        Here is a collection of my best travel pictures that I took while travelling places all
-        around the world.
-      </p>
-      <ul>
-        <li><button>ITALY</button></li>
-        <li><button>AUSTRALIA</button></li>
-        <li><button>INDIA</button></li>
-        <li><button>BRAZIL</button></li>
-      </ul>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <section class="gallery" id="photography">
+      <div class="gallery__container">
+        <h2 class="gallery__title">Photography</h2>
+        <p class="gallery__text">
+          Here is a collection of my best travel pictures that I took while travelling places all
+          around the world.
+        </p>
+        <ul class="gallery__filters">
+          <li class="gallery__elemet"><button class="gallery__btn" type="button">ITALY</button></li>
+          <li class="gallery__elemet">
+            <button class="gallery__btn" type="button">AUSTRALIA</button>
+          </li>
+          <li class="gallery__elemet"><button class="gallery__btn" type="button">INDIA</button></li>
+          <li class="gallery__elemet">
+            <button class="gallery__btn" type="button">BRAZIL</button>
+          </li>
+        </ul>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img
+              class="gallery__img"
+              srcset="
+                ./images/mobile/photography1-m-1x.jpg 1x,
+                ./images/mobile/photography1-m-2x.jpg 2x
+              "
+              src="./images/mobile/photography1-m-1x.jpg"
+              alt="Street"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__img"
+              srcset="
+                ./images/mobile/photography2-m-1x.jpg 1x,
+                ./images/mobile/photography2-m-2x.jpg 2x
+              "
+              src="./images/mobile/photography2-m-1x.jpg"
+              alt="Street"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__img"
+              srcset="
+                ./images/mobile/photography3-m-1x.jpg 1x,
+                ./images/mobile/photography3-m-2x.jpg 2x
+              "
+              src="./images/mobile/photography3-m-1x.jpg"
+              alt="Street"
+            />
+          </li>
+          <li class="gallery__item">
+            <img
+              class="gallery__img"
+              srcset="
+                ./images/mobile/photography4-m-1x.jpg 1x,
+                ./images/mobile/photography4-m-2x.jpg 2x
+              "
+              src="./images/mobile/photography4-m-1x.jpg"
+              alt="Street"
+            />
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Contact section -->
-    <section id="contact">
-      <h2>Let’s get started</h2>
-      <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
-      <form action="">
-        <label class="form__field">
-          <span class="form__label">Name</span>
-          <input class="form__input" type="text" name="name" />
-        </label>
-        <label class="form__field">
-          <span class="form__label">Email</span>
-          <input class="form__input" type="email" name="email" />
-        </label>
-        <label class="form__field">
-          <span class="form__label">Message</span>
-          <textarea class="form__textarea" name="message"></textarea>
-        </label>
-        <button class="modal-form__btn" type="submit">Let’s get started</button>
-      </form>
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Let’s get started</h2>
+        <p class="contact__text">
+          Now that you know a lot about me, let me know if you are interested to work with me.
+        </p>
+        <form class="form" action="">
+          <label class="form__field">
+            <span class="form__label">Name</span>
+            <input class="form__input" type="text" name="name" />
+          </label>
+          <label class="form__field">
+            <span class="form__label">Email</span>
+            <input class="form__input" type="email" name="email" />
+          </label>
+          <label class="form__field">
+            <span class="form__label">Message</span>
+            <textarea class="form__textarea" name="message"></textarea>
+          </label>
+          <button class="form__btn" type="submit">Let’s get started</button>
+        </form>
+      </div>
     </section>
     <!-- Footer -->
-    <footer>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-      <nav>
-        <ul>
-          <li><a href="#experience" class="link">Experience</a></li>
-          <li><a href="#work" class="link">Work</a></li>
-          <li><a href="#photography" class="link">Photography</a></li>
-          <li><a href="#contact" class="link">Contact</a></li>
+    <footer class="footer">
+      <div class="footer__container">
+        <svg class="footer__logo" width="130" height="40">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+        <ul class="footer__social">
+          <li>
+            <a href="">
+              <svg class="socila__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="socila__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-dribbble"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="socila__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedIn"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#experience" class="footer__link">Experience</a></li>
+            <li class="footer__item"><a href="#work" class="footer__link">Work</a></li>
+            <li class="footer__item">
+              <a href="#photography" class="footer__link">Photography</a>
+            </li>
+            <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="">Store</a></li>
+          <li class="footer__item"><a class="footer__link" href="">Blog</a></li>
+          <li class="footer__item"><a class="footer__link" href="">Reading List</a></li>
+        </ul>
+        <p class="footer__text">Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
+      </div>
+    </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use class="icon-cross" href="./images/icons.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#experience" class="menu__link">Experience</a></li>
+          <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
+          <li class="menu__item">
+            <a href="#photography" class="menu__link">Photography</a>
+          </li>
+          <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="">Store</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Reading List</a></li>
-      </ul>
-      <p>Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
-    </footer>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
