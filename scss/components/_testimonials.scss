@@ -1,0 +1,51 @@
+.testimonials__container {
+  @extend %container;
+}
+
+.testimonials__title {
+  @extend %section-title;
+  margin-bottom: 16px;
+}
+
+.testimonials__desc {
+  color: getColor('light-grey');
+  margin-bottom: 40px;
+}
+
+.testimonials__link {
+  @extend %link;
+  @extend %special-link;
+  display: inline-block;
+  color: getColor('text');
+  margin-bottom: 64px;
+}
+
+.testimonials__list {
+  @extend %list;
+}
+
+.testimonials__item {
+  & + & {
+    margin-top: 48px;
+  }
+}
+
+.testimonials__label {
+  padding: 32px;
+  border: 1px solid getColor('dark-grey');
+}
+
+.testimonials__text {
+  @extend %section-subtitle;
+  margin-bottom: 64px;
+}
+
+.testimonials__name {
+  color: getColor('light-grey');
+  font-weight: 700px;
+  margin-bottom: 4px;
+}
+
+.testimonials__job-title {
+  color: getColor('light-grey');
+}

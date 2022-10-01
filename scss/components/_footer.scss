@@ -1,0 +1,45 @@
+.footer {
+  background-color: getColor('level-1');
+}
+
+.footer__container {
+  @extend %container;
+}
+
+.footer__logo {
+  fill: getColor('text');
+  margin-bottom: 32px;
+}
+
+.footer__social {
+  @extend %list;
+  display: flex;
+  margin-bottom: 48px;
+
+  li + li {
+    margin-left: 16px;
+  }
+}
+
+.footer__list {
+  @extend %list;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 48px;
+}
+
+.footer__link {
+  @extend %link;
+  font-size: 16px;
+  color: getColor('text');
+}
+
+.footer__text {
+  margin-top: 48px;
+  font-size: 16px;
+  color: getColor('light-grey');
+}

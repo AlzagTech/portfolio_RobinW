@@ -1,0 +1,68 @@
+.contact__container {
+  @extend %container;
+}
+
+.contact__title {
+  @extend %section-title;
+  margin-bottom: 16px;
+}
+
+.contact__text {
+  color: getColor('light-grey');
+  margin-bottom: 48px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.form__label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.form__input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+
+  color: getColor('text');
+  background-color: getColor('level-1');
+
+  border: none;
+  &:focus {
+    outline: 1px solid getColor('primary');
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+
+  color: getColor('text');
+  background-color: getColor('level-1');
+
+  border: none;
+  resize: none;
+
+  &:focus {
+    outline: 1px solid getColor('primary');
+  }
+}
+
+.form__btn {
+  display: block;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  text-transform: uppercase;
+
+  color: getColor('text');
+  background-color: getColor('primary');
+
+  border: none;
+}
